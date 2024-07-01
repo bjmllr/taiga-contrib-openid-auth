@@ -10,7 +10,7 @@
     "defaultLanguage": "${DEFAULT_LANGUAGE}",
     "themes": ["taiga"],
     "defaultTheme": "taiga",
-    "defaultLoginEnabled": true,
+    "defaultLoginEnabled": ${DEFAULT_LOGIN_ENABLED},
     "publicRegisterEnabled": ${PUBLIC_REGISTER_ENABLED},
     "feedbackEnabled": true,
     "supportUrl": "https://community.taiga.io/",
