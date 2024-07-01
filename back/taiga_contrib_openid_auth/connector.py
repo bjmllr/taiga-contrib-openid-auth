@@ -96,12 +96,12 @@ def _post(url: str, params: dict, headers: dict) -> dict:
     except:
         raise OpenIDApiError({"status_code": response.status_code,
                         "error": 'error from data not retrievable',
-                        "content": response.content})
+                        "content": response.text})
     else:
         if response.status_code != 200 or ("error" in data):
             raise OpenIDApiError({"status_code": response.status_code,
                             "error": data.get("error", ""),
-                            "content": response.content})
+                            "content": response.text})
     return data
 
 
